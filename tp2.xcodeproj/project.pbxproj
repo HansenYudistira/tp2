@@ -67,10 +67,10 @@
 		A7639CED2C4C0EA000E47101 /* tp2 */ = {
 			isa = PBXGroup;
 			children = (
+				A7639D132C4C20E000E47101 /* Animation */,
 				A7639D102C4C1FE700E47101 /* View */,
 				A7639D0F2C4C1FD600E47101 /* Model */,
 				A7639CEE2C4C0EA000E47101 /* tp2App.swift */,
-				A7639D012C4C139900E47101 /* TP2 Logo.json */,
 				A7639CF22C4C0EA100E47101 /* Assets.xcassets */,
 				A7639CF42C4C0EA100E47101 /* Preview Content */,
 			);
@@ -97,9 +97,9 @@
 		A7639D102C4C1FE700E47101 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A7639D122C4C20C800E47101 /* Chart */,
 				A7639D112C4C1FF500E47101 /* FoodView */,
 				A7639CF02C4C0EA000E47101 /* ContentView.swift */,
-				A7639D0B2C4C187E00E47101 /* ChartView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,6 +112,22 @@
 				A7639D072C4C15CA00E47101 /* FoodDetailView.swift */,
 			);
 			path = FoodView;
+			sourceTree = "<group>";
+		};
+		A7639D122C4C20C800E47101 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				A7639D0B2C4C187E00E47101 /* ChartView.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		A7639D132C4C20E000E47101 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				A7639D012C4C139900E47101 /* TP2 Logo.json */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
