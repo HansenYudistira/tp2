@@ -67,14 +67,9 @@
 		A7639CED2C4C0EA000E47101 /* tp2 */ = {
 			isa = PBXGroup;
 			children = (
+				A7639D102C4C1FE700E47101 /* View */,
+				A7639D0F2C4C1FD600E47101 /* Model */,
 				A7639CEE2C4C0EA000E47101 /* tp2App.swift */,
-				A7639CF02C4C0EA000E47101 /* ContentView.swift */,
-				A7639D052C4C158100E47101 /* FoodItem.swift */,
-				A7639D032C4C14AE00E47101 /* FoodListView.swift */,
-				A7639D0D2C4C1A7D00E47101 /* FoodCardView.swift */,
-				A7639D072C4C15CA00E47101 /* FoodDetailView.swift */,
-				A7639D0B2C4C187E00E47101 /* ChartView.swift */,
-				A7639D092C4C186400E47101 /* Cart.swift */,
 				A7639D012C4C139900E47101 /* TP2 Logo.json */,
 				A7639CF22C4C0EA100E47101 /* Assets.xcassets */,
 				A7639CF42C4C0EA100E47101 /* Preview Content */,
@@ -88,6 +83,35 @@
 				A7639CF52C4C0EA100E47101 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7639D0F2C4C1FD600E47101 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7639D052C4C158100E47101 /* FoodItem.swift */,
+				A7639D092C4C186400E47101 /* Cart.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7639D102C4C1FE700E47101 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7639D112C4C1FF500E47101 /* FoodView */,
+				A7639CF02C4C0EA000E47101 /* ContentView.swift */,
+				A7639D0B2C4C187E00E47101 /* ChartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7639D112C4C1FF500E47101 /* FoodView */ = {
+			isa = PBXGroup;
+			children = (
+				A7639D032C4C14AE00E47101 /* FoodListView.swift */,
+				A7639D0D2C4C1A7D00E47101 /* FoodCardView.swift */,
+				A7639D072C4C15CA00E47101 /* FoodDetailView.swift */,
+			);
+			path = FoodView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
