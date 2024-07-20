@@ -10,6 +10,8 @@ import SwiftUI
 struct FoodDetailView: View {
     @EnvironmentObject var cart: Cart
     @State private var showCart = false
+    @State private var showMessage = false
+    @State private var message = ""
     var food: FoodItem
     
     var body: some View {
@@ -35,6 +37,11 @@ struct FoodDetailView: View {
             
             Button(action: {
                 cart.addItem(food)
+                showMessage = true
+                message = "Makanan berhasil ditambahkan ke keranjang"
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    showMessage = false
+                }
             }) {
                 Text("Tambahkan ke keranjang")
                     .font(.headline)
@@ -60,5 +67,20 @@ struct FoodDetailView: View {
             CartView()
                 .environmentObject(cart)
         }
+        .overlay(
+            VStack {
+                if showMessage {
+                    Text(message)
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.black.opacity(0.7))
+                        .cornerRadius(10)
+                        .transition(.opacity)
+                }
+            }
+            .padding()
+            , alignment: .bottom
+        )
     }
 }
